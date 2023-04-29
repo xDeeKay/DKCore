@@ -1,0 +1,141 @@
+name: DKCore
+version: 1.0
+description: Plugin for DKCraft.
+author: xDeeKay
+main: net.dkcraft.dkcore.Main
+depend: [Essentials, Votifier]
+api-version: 1.13
+commands:
+    dkcore:
+        description: List available DKCore commands.
+        usage: /dkcore
+        permission: dkcore.dkcore
+        permission-message: You do not have permission to do that.
+    freeze:
+        description: Freeze a player.
+        usage: /freeze <player> [reason]
+        aliases: f
+        permission: dkcore.freeze
+        permission-message: You do not have permission to do that.
+    givecoalprotection:
+        description: Give a player a coal protection stone.
+        usage: /givecoalprotection
+        permission: dkcore.givecoalprotection
+        permission-message: You do not have permission to do that.
+    login:
+        description: Broadcast a fake join message.
+        usage: /login
+        permission: dkcore.hidestatus.login
+        permission-message: You do not have permission to do that.
+    logout:
+        description: Broadcast a fake leave message.
+        usage: /logout
+        permission: dkcore.hidestatus.logout
+        permission-message: You do not have permission to do that.
+    ranks:
+        description: List the server ranks.
+        usage: /ranks
+        permission: dkcore.ranks
+        permission-message: You do not have permission to do that.
+    report:
+        description: Send a report to staff members.
+        usage: /report <message>
+        aliases: helpop
+        permission: dkcore.report
+        permission-message: You do not have permission to do that.
+    reportlist:
+        description: List all active reports.
+        usage: /reportlist
+        aliases: rl
+        permission: dkcore.report.list
+        permission-message: You do not have permission to do that.
+    reportclaim:
+        description: Claim an active report.
+        usage: /reportclaim <player>
+        aliases: rc
+        permission: dkcore.report.claim
+        permission-message: You do not have permission to do that.
+    reportdelete:
+        description: Delete an active report.
+        usage: /reportdelete <player>
+        aliases: rd
+        permission: dkcore.report.delete
+        permission-message: You do not have permission to do that.
+    servermsg:
+        description: Broadcast a message to the server.
+        usage: /servermsg <message>
+        permission: dkcore.servermsg
+        permission-message: You do not have permission to do that.
+    staffchat:
+        description: Toggle staff chat.
+        usage: /staffchat
+        aliases: [sc, staff]
+        permission: dkcore.staffchat
+        permission-message: You do not have permission to do that.
+    unfreeze:
+        description: Unfreeze a player.
+        usage: /unfreeze <player>
+        aliases: uf
+        permission: dkcore.freeze.unfreeze
+        permission-message: You do not have permission to do that.
+    vote:
+        description: Display the vote GUI.
+        usage: /vote
+        aliases: [votepoints, votestore, votelist]
+        permission: dkcore.vote
+        permission-message: You do not have permission to do that.
+    warn:
+        description: Warn a player.
+        usage: /warn <player> <reason>
+        permission: dkcore.warn
+        permission-message: You do not have permission to do that.
+    ban:
+        description: Manage bans.
+        usage: /ban <args>
+        permission: dkcore.ban
+        permission-message: You do not have permission to do that.
+    banold:
+        description: Ban a player.
+        usage: /ban <player> <time> <reason>
+        permission: dkcore.ban
+        permission-message: You do not have permission to do that.
+    bancheck:
+        description: Display a players ban status.
+        usage: /bancheck <player>
+        permission: dkcore.ban.check
+        permission-message: You do not have permission to do that.
+    banhistory:
+        description: Display a players ban history.
+        usage: /banhistory <player>
+        permission: dkcore.ban.history
+        permission-message: You do not have permission to do that.
+    banimport:
+        description: Import bans from file list.
+        usage: /banimport
+        permission: dkcore.ban.import
+        permission-message: You do not have permission to do that.
+    banrecent:
+        description: Display recent server bans.
+        usage: /banrecent <amount>
+        permission: dkcore.ban.recent
+        permission-message: You do not have permission to do that.
+    unban:
+        description: Unban a player.
+        usage: /unban <player> <reason>
+        permission: dkcore.ban.unban
+        permission-message: You do not have permission to do that.
+permissions:
+   dkcore.report.list:
+     description: Receive player reports.
+   dkcore.hidestatus:
+     description: Hide login/logout status.
+   dkcore.staffchat.owner:
+     description: Defines the owner prefix for staff chat.
+   dkcore.staffchat.admin:
+     description: Defines the admin prefix for staff chat.
+   dkcore.staffchat.operator:
+     description: Defines the operator prefix for staff chat.
+   dkcore.staffchat.developer:
+     description: Defines the developer prefix for staff chat.
+   dkcore.staffchat.moderator:
+     description: Defines the moderator prefix for staff chat.

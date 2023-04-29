@@ -1,0 +1,65 @@
+ranks:
+  - "&eServer Ranks:"
+  - "&cOwner: &eHe pays for the server and manages it along with its plugins."
+  - "&9Administrator: &eManages the server and the forum to make sure everything is running correctly. In charge of the decision making."
+  - "&bOperator: &eThese players are experienced staff members, they are given extra commands to further assist the server and its players."
+  - "&3Developer: &eDevelops the servers specific code."
+  - "&aModerator: &eModerate the server and its players. They undo grief and make sure players are following the rules."
+  - "&6Trusted: &eThese players have earned the staffs respect. They are active, helpful, and friendly players of the community."
+  - "&7Member: &eThese players have signed up on the forum."
+  - "&fGuest: &eThese players are new to the server."
+announcement:
+  interval: 200
+  messages:
+    - This is message 1
+    - This is message 2
+    - This is message 3
+hidestatus:
+  login: "&e%player% joined the game."
+  logout: "&e%player% left the game."
+vote:
+  points: 1
+  list:
+    - "&aGTop100: &egtop100.com/in.php?site=73320"
+    - "&aPlanet Minecraft: &eplanetminecraft.com/server/dkcraft-survival-server/vote/"
+    - "&aMinestatus: &eminestatus.net/19730-dkcraft/vote"
+    - "&aMC Server List: &eminecraft-server-list.com/server/23908/vote"
+    - "&aMinecraft-mp: &eminecraft-mp.com/server-s83178"
+    - "&aMinecraft Servers: &eminecraftservers.org/vote/233659"
+  store:
+    - 1:sponge:1
+    - 2:stone:5
+    - 1:spawnegg_sheep:2
+  commands:
+    - "eco give %player% 500"
+protection_blocks:
+  block1:
+    block: coal_ore
+    sign_name: Coal Prot.
+    meta_name: '&7Coal Protection'
+    meta_lore:
+      - '&f&oprotection size: 11x11x11'
+  block2:
+    block: lapis_ore
+    sign_name: Lapis Prot.
+    meta_name: '&9Lapis Protection'
+    meta_lore:
+      - '&f&oprotection size: 21x21x21'
+  block3:
+    block: emerald_ore
+    sign_name: Emerald Prot.
+    meta_name: '&aEmerald Protection'
+    meta_lore:
+      - '&f&oprotection size: 41x41x41'
+honeypot:
+  offenseCount: 1
+  offensePoints: 4
+  command: 'ban %player% t:7d Banned by Honeypot for griefing.'
+  announcement: '[&aHoneypot&f] &eBanned %player& for griefing.'
+  locations: {}
+mysql:
+  user: user
+  port: 3306
+  password: pass
+  host: localhost
+  database: database
